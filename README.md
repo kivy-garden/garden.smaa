@@ -8,8 +8,8 @@ It has been tested only on Linux with NVIDIA card (GTX 560, 310.44 drivers)
 
 Read more about SMAA:
 
-	- Official Website: http://www.iryoku.com/smaa/
-	- Source code: https://github.com/iryoku/smaa
+- Official Website: http://www.iryoku.com/smaa/
+- Source code: https://github.com/iryoku/smaa
 
 # Usage
 
