@@ -23,7 +23,7 @@ any resizing at the moment.
 
 ![Comparaison](/screenshot.png)
 
-Here is an example of the usage::
+Example:
 
 ```python
 from kivy.garden.smaa import SMAA
