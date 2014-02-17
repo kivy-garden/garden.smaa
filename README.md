@@ -25,26 +25,27 @@ any resizing at the moment.
 
 Here is an example of the usage::
 
-	from kivy.garden.smaa import SMAA
-    from kivy.uix.widget import Widget
-    from kivy.graphics import Color, Triangle
+```python
+from kivy.garden.smaa import SMAA
+from kivy.uix.widget import Widget
+from kivy.graphics import Color, Triangle
 
-    class SMAAApp(App):
+class SMAAApp(App):
 
-        def build(self):
-            smaa = SMAA(size=Window.size)
+	def build(self):
+		smaa = SMAA(size=Window.size)
 
-            wid = Widget()
-            w, h = Window.size
-            with wid.canvas:
-                Color(1, 1, 1)
-                Triangle(points=(
-                    w / 2 - w * .25, h / 2 - h * .25,
-                    w / 2, h / 2 + h * .25,
-                    w / 2 + w * .25, h / 2 - h * .25))
-            smaa.add_widget(wid)
+		wid = Widget()
+		w, h = Window.size
+		with wid.canvas:
+			Color(1, 1, 1)
+			Triangle(points=(
+				w / 2 - w * .25, h / 2 - h * .25,
+				w / 2, h / 2 + h * .25,
+				w / 2 + w * .25, h / 2 - h * .25))
+		smaa.add_widget(wid)
 
-            return smaa
+		return smaa
 
-    SMAAApp().run()
-
+SMAAApp().run()
+```
